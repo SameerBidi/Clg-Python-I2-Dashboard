@@ -1,5 +1,3 @@
-from turtle import pd
-from matplotlib.pyplot import title
 import streamlit as st
 from PIL import Image
 import pandas as pd
