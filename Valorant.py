@@ -1,6 +1,7 @@
 import streamlit as st
 from PIL import Image
 import pandas as pd
+import dataset_reader
 
 st.set_page_config(page_title="Streamlit-Valorant")
 
@@ -12,7 +13,3 @@ st.image(val_image, caption="Valorant")
 st.markdown("**Valorant** is a 5v5 character-based tactical FPS where precise gunplay meets unique agent abilities.")
 
 st.subheader("In this Web-App we are going to explore and analyze the Weapon Stats")
-
-df = pd.read_csv("static/datasets/valorant-stats.csv")
-
-st.session_state["df"] = df

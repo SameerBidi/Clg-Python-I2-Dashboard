@@ -1,9 +1,10 @@
 import streamlit as st
 import pandas as pd
+import dataset_reader
 
 st.set_page_config(page_title="Data Info")
 
-df = st.session_state["df"]
+df = dataset_reader.get_valorant_stats_data()
 
 st.title("Let's get to know our data")
 
