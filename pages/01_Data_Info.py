@@ -1,12 +1,14 @@
 import streamlit as st
 import pandas as pd
 
+st.set_page_config(page_title="Data Info")
+
 df = st.session_state["df"]
 
 st.title("Let's get to know our data")
 
 st.subheader("Complete Data")
-df
+st.dataframe(df, use_container_width=True)
 
 r, c = df.shape
 
@@ -34,4 +36,4 @@ cols_data = pd.DataFrame({
     "Leg Damage from Max Range"
     ]
 })
-cols_data
+st.dataframe(cols_data, use_container_width=True)

@@ -4,7 +4,7 @@ import streamlit as st
 from PIL import Image
 import pandas as pd
 
-st.set_page_config(page_title="My Page Title")
+st.set_page_config(page_title="Streamlit-Valorant")
 
 st.title("Valorant Weapon Stats Explorer")
 

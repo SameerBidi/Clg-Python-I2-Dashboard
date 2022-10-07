@@ -2,6 +2,8 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 
+st.set_page_config(page_title="Weapon Types")
+
 df = st.session_state["df"]
 
 st.title("Weapon Types")
